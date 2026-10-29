@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+
+
+#principal{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.videofondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #1c1c1d;
+    opacity: 0;
+    mix-blend-mode: overlay;
+    
+    
+}
+
+.poem{
+   
+    position: relative;
+    z-index: 2;
+    text-align: center; 
+    font-size: 50px;
+    margin-top: 1cm;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    
+
+    
+}
+.poem p{
+    color: white;
+    margin-top: 0;
+    
+}
+
+
+#button-tablero{
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    border-radius: 15px;
+    bottom: 1.5cm;
+    border-color: #ffff94;
+    padding:5px;
+    border-width: 2px;
+    border-style: solid;
+    width: 4cm;
+    justify-content: center;
+    background-color: #efb810;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    color:black;
+    font-size: 20px;
+    
+}
+
+#button-tablero:hover{
+    background-color: transparent;
+    color: white;
+}
