@@ -28,9 +28,8 @@ body{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    background-color: #1c1c1d;
-    opacity: 0;
-    mix-blend-mode: overlay;
+    background-color: #909090;
+    opacity: 0.2;
     
     
 }
@@ -57,7 +56,7 @@ body{
 }
 
 
-#button-tablero{
+#button-heart{
     display: flex;
     z-index: 2;
     position: absolute;
@@ -77,7 +76,42 @@ body{
     
 }
 
-#button-tablero:hover{
+#button-heart:hover{
     background-color: transparent;
     color: white;
 }
+
+.poem_box{
+    position: relative;
+    min-height: 100vh;
+    min-width: 17cm;
+}
+
+@keyframes flotar{
+
+    from{
+
+        transform: translateY(0);
+        transform: translateX(-50%);
+    }
+    
+    to{
+        transform: translateY(-200px);
+        
+    }
+}
+
+.corazon{
+    animation-name: flotar;
+    animation-duration: 2599ms;
+    animation-timing-function: ease-in;
+
+}
+
+.corazon {
+    position: absolute;
+    bottom: 2cm;
+    left: 50%;
+    font-size: 35px;
+}
+
